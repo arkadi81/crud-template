@@ -1,0 +1,30 @@
+<div>this is component 3 - new </div>
+<div data-bind="text: ko.toJSON($data)"></div>
+
+<!-- <div data-bind="dialog: { isOpen: isOpen, title: 'item dialog', modal: true }"> -->
+<div id="dialog" data-bind="dialog: {'autoOpen': false, isOpen: isOpen, title: 'New Item', modal: true}">
+    <form data-bind="submit: submitForm">
+            <!-- <div>
+                <label>ID</label><input data-bind="textInput: currentID, enable: false">
+            </div> -->
+            <div>
+                <label>Name</label><input data-bind="textInput: name">
+            </div>
+        <button type="submit">Submit</button>
+        <!-- <button data-bind="click: resetForm">Reset</button> -->
+        <button data-bind="click: closeDialog">Cancel</button>
+    </form>
+</div>
+        <!-- ----------------- -->
+    <!-- THIS DOES WORK BUT PRODUCES ALL OF THE CONTENTS -->
+   <!--  <div data-bind="foreachprop: Content">
+        <div>
+            <label data-bind="text: key"></label>
+            <input data-bind="textInput: value">
+        </div>  
+    </div> -->
+    
+<!-- <label>DBID</label><div data-bind="text: Content().Body"></div> -->
+<!-- <label>Title</label><div data-bind="text: Content().Body"></div> -->
+
+<!-- since content was fetch from ko.map, its an obs and needs parenthesis -->

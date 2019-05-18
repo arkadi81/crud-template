@@ -1,0 +1,31 @@
+<H1>Component 1 (Main): List of records and options</H1>
+<p>click on a row to open an item view dialog</p>
+<table id="datatable" class="display compact dataTable">
+<!-- <table>	 -->
+	<thead>
+		<tr>
+			<th>Select</th>
+			<th>ID</th>
+			<th>Name</th>
+		</tr>
+	</thead>
+	
+	<!-- <tbody data-bind="dataforeach: items"> -->
+
+	<tbody data-bind="dataTablesForEach : {
+			data: items,
+			options: { 
+				deferRender: true,
+				paging: true,
+			}
+		}">
+		<tr data-bind="click: $parent.openItem">
+			<td><input type="checkbox" data-bind="value: ID, checked: true"></td>
+			<td><span data-bind="text: ID"></span></td>
+			<td><span data-bind="text: name"></span></td>
+		</tr>
+	</tbody>
+</table>
+<button data-bind="click: addItem" class="button">Add New</button>
+<!-- <button data-bind="click: refresh">Refresh data from server</button> -->
+<!-- <button data-bind="click: enableDataTable">enable data table</button> -->

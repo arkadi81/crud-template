@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>knockout component communication test page</title>
+
+	<!-- <script type="text/javascript" src="lib/jquery/jquery-3.3.1.js"></script> -->
+	<!-- <script type="text/javascript" src="lib/jquery-ui-1.12.1/jquery-ui.js"></script> -->
+	<!-- <script type="text/javascript" src="lib/knockout/knockout-3.5.0.js"></script> -->
+	
+
+	<!-- <link rel="stylesheet" type="text/css" href="lib/jquery-ui/jquery-ui.css"> -->
+	<link rel="stylesheet" type="text/css" href="lib/jquery-ui/themes/start/jquery-ui.css">
+	
+	<link rel="stylesheet" type="text/css" href="lib/dataTables/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/knockout-datatable/knockout-datatable.css">
+
+	
+</head>
+<body>
+	<!-- async call below - does not prevent code from keeping on -->
+	<!-- <script type=config></script>  -->
+	
+
+	<!-- <script type="text/javascript" src="lib/knockout-dialog-handlers/knockout-dialog-handlers.js"></script> -->
+	<!-- <script src="lib/knockout-jqueryui/knockout-jqueryui.js"></script> -->
+
+<div id="container">
+	Container
+	<div data-bind="text: ko.toJSON($data)"></div>
+</div>
+
+<comp1></comp1>
+
+<comp2></comp2>
+
+<comp3></comp3>
+
+
+
+<script src="lib/requirejs/require.js" data-main="app/main"></script>
+
+
+</body>
+</html>
