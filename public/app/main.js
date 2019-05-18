@@ -8,7 +8,8 @@ require.config({
         'knockout-jqueryui': 'lib/knockout-jqueryui',
 
         'postbox': 'lib/knockout-postbox/knockout-postbox',
-        'datatables': 'lib/dataTables/datatables',
+        // 'datatables': 'lib/dataTables/datatables',
+        'datatables': 'lib/dataTables/DataTables-1.10.18/js/jquery.dataTables', // this is the correct amdfied plugin
         'knockout-datatable': 'lib/knockout-datatable/knockout-datatable',
         'dataTablesForEach': 'lib/dataTablesForEach/dataTablesForEach',
         'text': 'lib/requirejs-text/text'
