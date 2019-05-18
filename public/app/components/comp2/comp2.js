@@ -79,10 +79,10 @@ define(['jquery','knockout', 'text!../comp2/comp2.html','postbox','knockout-jque
 		console.log("component2 vm fired");
 
 		// when instantiated, get info from server re active stuff
-		return self;
+		// return self;
 	}
 
-	 return { viewModel: vm, template: template }; 
+	return { viewModel: vm, template: template }; 
 	// return comp1vm;
 });
 

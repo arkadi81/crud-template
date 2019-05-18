@@ -2,8 +2,8 @@
 define(
 
     [
-        'knockout',
-        'knockout-jqueryui/button'
+        'knockout'
+        // 'knockout-jqueryui/button'
     ],
 
     function (ko) {

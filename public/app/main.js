@@ -49,9 +49,9 @@ require(
         'use strict';
 
         ko.components.register('comp1', {
-            // viewModel: { require: 'components/comp1/comp1' },
-            // template: { require: 'text!components/comp1/comp1.html'}
-            require: 'app/components/comp1/comp1'
+            viewModel: { require: 'app/components/comp1/comp1' },
+            template: { require: 'text!app/components/comp1/comp1.html'}
+            // require: 'app/components/comp1/comp1'
         });
 
         ko.components.register('comp2', {
@@ -127,6 +127,6 @@ require(
         };
 
 
-        ko.applyBindings(new ViewModel());
+        ko.applyBindings(new ViewModel(), document.getElementById('container'));
     }
 );

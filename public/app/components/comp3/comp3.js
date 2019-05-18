@@ -74,7 +74,7 @@ define(['jquery','knockout', 'text!../comp3/comp3.html','postbox','knockout-jque
 		console.log("component3 vm fired");
 
 		// when instantiated, get info from server re active stuff
-		return self;
+		// return self;
 	}
 
 	 return { viewModel: vm, template: template }; 

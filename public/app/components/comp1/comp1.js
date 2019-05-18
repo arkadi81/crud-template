@@ -1,4 +1,5 @@
-define(['jquery','knockout', 'text!../comp1/comp1.html','postbox','datatables'], function($,ko, template1) { // insert [], if preloading other stuff
+// define(['jquery','knockout', 'text!../comp1/comp1.html','postbox','datatables'], function($,ko, template1) { // insert [], if preloading other stuff
+define(['jquery','knockout','postbox','datatables'], function($,ko) { // insert [], if preloading other stuff	
 	// this is the 'main' component that displays all rows
 	function comp1vm(params) {
 
@@ -71,7 +72,7 @@ define(['jquery','knockout', 'text!../comp1/comp1.html','postbox','datatables'],
 		// self.enableDataTable(); // this is a hack!
 		
 
-		return self;
+		// return self;
 	}
 
 	// ko.bindingHandlers.dataTablesForEach = {
@@ -132,13 +133,13 @@ define(['jquery','knockout', 'text!../comp1/comp1.html','postbox','datatables'],
 	// 	}
 	// };
 
-	$(document).ready(function() {
-    	// $('#datatable').DataTable({
-    	// 	responsive: true
-    	// });
-	}); // grants datatable functionality... could be better without direct reference of dom? does work though
+	// $(document).ready(function() {
+ //    	// $('#datatable').DataTable({
+ //    	// 	responsive: true
+ //    	// });
+	// }); // grants datatable functionality... could be better without direct reference of dom? does work though
 
-	 return { viewModel: comp1vm, template: template1 }; 
-	// return comp1vm;
+	 // return { viewModel: comp1vm, template: template1 }; 
+	return comp1vm;
 
 });

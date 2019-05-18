@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="lib/dataTables/datatables.min.css">
 	<link rel="stylesheet" type="text/css" href="lib/knockout-datatable/knockout-datatable.css">
 
-	
+	<script src="lib/requirejs/require.js" data-main="app/main"></script>
 </head>
 <body>
 	<!-- async call below - does not prevent code from keeping on -->
@@ -27,17 +27,15 @@
 <div id="container">
 	Container
 	<div data-bind="text: ko.toJSON($data)"></div>
+
+	<comp1></comp1>
+
+	<comp2></comp2>
+
+	<comp3></comp3>
+	
 </div>
 
-<comp1></comp1>
-
-<comp2></comp2>
-
-<comp3></comp3>
-
-
-
-<script src="lib/requirejs/require.js" data-main="app/main"></script>
 
 
 </body>
