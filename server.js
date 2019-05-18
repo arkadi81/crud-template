@@ -127,5 +127,6 @@ app.delete("/api/user/:id", (req, res, next) => {
 app.get("/", (req, res, next) => {
     // res.json({"message":"Ok"})
     res.sendFile(path.join(__dirname + '/index.html'));
+    // res.sendFile('/index.html');
 });
 
