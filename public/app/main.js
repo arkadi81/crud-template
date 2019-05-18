@@ -12,6 +12,10 @@ require.config({
         'datatables': 'lib/dataTables/DataTables-1.10.18/js/jquery.dataTables', // this is the correct amdfied plugin
         'knockout-datatable': 'lib/knockout-datatable/knockout-datatable',
         'dataTablesForEach': 'lib/dataTablesForEach/dataTablesForEach',
+
+        'dataTables': 'https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min',
+
+        'bootstrap4': 'https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min',
         'text': 'lib/requirejs-text/text'
     },
     shim: {

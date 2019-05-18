@@ -1,5 +1,5 @@
 // define(['jquery','knockout', 'text!../comp1/comp1.html','postbox','datatables'], function($,ko, template1) { // insert [], if preloading other stuff
-define(['jquery','knockout','postbox','datatables'], function($,ko) { // insert [], if preloading other stuff	
+define(['jquery','knockout','postbox','dataTables','bootstrap4'], function($,ko) { // insert [], if preloading other stuff	
 	// this is the 'main' component that displays all rows
 	function comp1vm(params) {
 
