@@ -1,6 +1,6 @@
 # CRUD TEMPLATE
 
-a *very* quick and dirty "full stack" CRUD engine, based on 
+a "full stack" CRUD engine, based on 
 https://github.com/fraigo/node-express-rest-api-example
 
 ## tools and dependencies
@@ -27,9 +27,9 @@ Backend api as follows:
 * POST /api/user/ - creates new user (id assigned automatically)
 
 ## Todo
-* design/css - thing looks terrible, and jquery ui isn't the prettiest thing around
-* requireJS and AMD framework could use some work
-* refactoring and renaming variables, redesigning database to accomodate a more general need
+* design/css - improve design and implement better UI for the modal dialog
+* streamline use requireJS throughout front end. Learn more about how requireJS interacts with a NodeJS environment
+* refactoring and renaming variables, redesigning database to accomodate more general needs
 * testing, task running (prettification, sass, minification, linting etc)
 
 ## Usage
