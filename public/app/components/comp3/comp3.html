@@ -1,5 +1,8 @@
-<div>this is component 3 - new </div>
-<div data-bind="text: ko.toJSON($data)"></div>
+<div>
+    <div>Component 3 data:</div>
+    <div data-bind="text: ko.toJSON($data)"></div>
+</div>
+
 
 <!-- <div data-bind="dialog: { isOpen: isOpen, title: 'item dialog', modal: true }"> -->
 <div id="dialog" data-bind="dialog: {'autoOpen': false, isOpen: isOpen, title: 'New Item', modal: true}">
